@@ -20,8 +20,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dientuki/localstorage-cache-api/issues"
-  },
-  "dependencies": {
-    "user": "0.0.0"
   }
 }
