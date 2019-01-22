@@ -3,7 +3,6 @@ export default class LocalStorageCacheApi {
   constructor(settings) {
     this.settings = settings;
     this.localObject = this.get();
-    this.now = Date.now();
   }
 
   /**
@@ -101,7 +100,8 @@ export default class LocalStorageCacheApi {
 
   /* eslint-disable dot-notation, dot-location */
   getData() {
-
+    this.now = Date.now();
+    
     return new Promise((resolve, reject) => {
 
       if (this.existsStorage() === false) {
