@@ -1,4 +1,4 @@
-# localStoragecache
+# localStorage-cache
 
 Use LocalStorage as Cache when read an external service or API
 
@@ -6,12 +6,12 @@ Use LocalStorage as Cache when read an external service or API
 
 Install package with NPM
 
-`npm install --save localstoragecache`
+`npm install --save localstorage-cache`
 
 ## Basic Usage
 
 ```javascript
-import LocalStoreCache from 'localStorecache';
+import LocalStorageCache from 'LocalStorageCache';
 
 const LS = new LocalStoreCache({
   api: 'http://www.example.com/service',
@@ -34,7 +34,7 @@ LS.getData().then((response) => {
 ## Recipes
 
 ```javascript
-import LocalStoreCache from 'LocalStoreCache';
+import LocalStorageCache from 'LocalStorageCache';
 
 const LS = new LocalStoreCache({
   api: 'http://www.example.com/service',
@@ -51,7 +51,7 @@ LS.getData().then((response) => {
 ```
 
 ```javascript
-import LocalStoreCache from 'LocalStoreCache';
+import LocalStorageCache from 'LocalStorageCache';
 
 const LS = new LocalStoreCache({
   api: 'http://www.example.com/service',
