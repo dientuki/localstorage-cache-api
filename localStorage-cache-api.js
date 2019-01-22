@@ -1,4 +1,4 @@
-export default class LocalStorageCache {
+export default class LocalStorageCacheApi {
 
   constructor(settings) {
     this.settings = settings;

@@ -1,14 +1,14 @@
 {
-  "name": "localstorage-cache",
+  "name": "localstorage-cache-api",
   "version": "0.0.1",
   "description": "Use LocalStorage as Cache when read an external service or API",
-  "main": "localStorage-cache.js",
+  "main": "localStorage-cache-api.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository" : {
+  "repository": {
     "type": "git",
-    "url": "https://github.com/dientuki/localstorage-cache"
+    "url": "https://github.com/dientuki/localstorage-cache-api"
   },
   "keywords": [
     "localstorage",
@@ -19,6 +19,9 @@
   "author": "Juan Farias",
   "license": "ISC",
   "bugs": {
-      "url": "https://github.com/dientuki/localstorage-cache/issues"
+    "url": "https://github.com/dientuki/localstorage-cache-api/issues"
+  },
+  "dependencies": {
+    "user": "0.0.0"
   }
 }
