@@ -1,8 +1,9 @@
 export default class LocalStorageCacheApi {
 
-  constructor(settings) {
+  constructor(settings, headers) {
     this.settings = settings;
     this.localObject = this.get();
+    this.headers = headers || {};
   }
 
   /**
@@ -68,7 +69,7 @@ export default class LocalStorageCacheApi {
   /* eslint-disable dot-notation, dot-location */
   getService() {
     return new Promise((resolve, reject) => {
-      fetch(this.settings.api)
+      fetch(this.settings.url, this.headers)
         .then((response) => {
           const type = response.headers.get('Content-Type').split(';');
 
