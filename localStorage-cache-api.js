@@ -35,6 +35,10 @@ export default class LocalStorageCacheApi {
     if (this.settings.expiration === undefined) {
       this.localObject = data;
     } else {
+    
+      if (this.now === undefined) {
+        this.now = Date.now();
+      }
 
       this.localObject = {
         data: data,
