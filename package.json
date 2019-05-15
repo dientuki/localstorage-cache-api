@@ -2,9 +2,11 @@
   "name": "localstorage-cache-api",
   "version": "0.0.5",
   "description": "Use LocalStorage as Cache when read an external service or API",
-  "main": "localStorage-cache-api.js",
+  "main": "src/localStorage-cache-api.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "eslint": "eslint js",
+    "jest": "jest",
+    "test": "eslint js && jest"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,32 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dientuki/localstorage-cache-api/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ]
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html"
+    ],
+    "coverageDirectory": "coverage",
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/js/__mocks__/fileMock.js",
+      "\\.(css|less|scss)$": "identity-obj-proxy"
+    },
+    "notify": true,
+    "verbose": true
   }
 }
