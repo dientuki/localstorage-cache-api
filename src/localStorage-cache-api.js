@@ -46,7 +46,12 @@ export default class LocalStorageCacheApi {
       };
     }
 
-    localStorage.setItem(this.settings.key, JSON.stringify(this.localObject));
+    // More info about https://www.html5rocks.com/en/tutorials/offline/quota-research/
+    try {
+      localStorage.setItem(this.settings.key, JSON.stringify(this.localObject));
+    } catch(domException) {
+      console.log(domException);
+    }
   }
 
   /**
