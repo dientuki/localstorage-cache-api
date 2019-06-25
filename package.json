@@ -1,6 +1,6 @@
 {
   "name": "localstorage-cache-api",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Use LocalStorage as Cache when read an external service or API",
   "main": "src/localStorage-cache-api.js",
   "scripts": {
